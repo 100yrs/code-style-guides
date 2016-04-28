@@ -1,0 +1,25 @@
+AllCops:
+  # don't check style on generated files.
+  Exclude:
+      - 'tmp/**/*'
+      - 'db/migrate/*'
+      - 'db/schema.rb'
+      - 'bin/*'
+
+Style/AndOr:
+  # Only disallow `and` for conditionals
+  EnforcedStyle: conditionals
+
+# Allow braces across multiple lines when used with chained methods
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/StringLiterals:
+  # Strings which span multiple lines using \ for continuation must
+  # use the same type of quotes on each line.
+  ConsistentQuotesInMultiline: true
+
+Metrics/ParameterLists:
+  # Keyword arguments are a great alternative to setting lots of variables
+  # from an options hash, so let's not discourage them.
+  CountKeywordArgs: false
