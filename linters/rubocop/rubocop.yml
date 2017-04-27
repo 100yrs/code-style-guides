@@ -29,6 +29,14 @@ Style/StringLiterals:
   # Strings which span multiple lines using \ for continuation must
   # use the same type of quotes on each line.
   ConsistentQuotesInMultiline: true
+  
+ Style/SymbolArray:
+    # This cop checks for array literals made up of symbols that are not using the %i() syntax.
+    # This check makes sense only on Ruby 2.0+.
+    # percent: (default) check for array literals made up of symbols that are not using the %i() syntax
+    # brackets: checks for symbol arrays using the %i() syntax on projects which do not want to use that syntax
+   EnforcedStyle: brackets
+  
 
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
