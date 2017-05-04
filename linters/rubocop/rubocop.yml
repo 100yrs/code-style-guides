@@ -13,7 +13,21 @@ Style/AndOr:
 # Allow braces across multiple lines when used with chained methods
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
-  
+
+# Use `%`-literal delimiters consistently
+# https://github.com/bbatsov/ruby-style-guide#percent-literal-braces
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%': '()'
+    '%i': '()'
+    '%q': '()'
+    '%Q': '()'
+    '%r': '{}'
+    '%s': '()'
+    '%w': '()'
+    '%W': '()'
+    '%x': '()'
+    
 # Use / or %r around regular expressions.
 Style/RegexpLiteral:
   EnforcedStyle: mixed
