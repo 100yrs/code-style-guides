@@ -20,11 +20,43 @@ Style/BlockDelimiters:
 Style/NumericPredicate:
   EnforcedStyle: comparison
 
+# Use `%`-literal delimiters consistently
+# https://github.com/bbatsov/ruby-style-guide#percent-literal-braces
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%': '()'
+    '%i': '()'
+    '%q': '()'
+    '%Q': '()'
+    '%r': '{}'
+    '%s': '()'
+    '%w': '()'
+    '%W': '()'
+    '%x': '()'
+
+# Use / or %r around regular expressions.
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+  # slashes: Always use slashes.
+  # percent_r: Always use %r.
+  # mixed: Use slashes on single-line regexes, and %r on multi-line regexes.
+
+  # If false, the cop will always recommend using %r if one or more slashes
+  # are found in the regexp string.
+  AllowInnerSlashes: true
+
 Style/StringLiterals:
   # Strings which span multiple lines using \ for continuation must
   # use the same type of quotes on each line.
   ConsistentQuotesInMultiline: true
 
+Style/SymbolArray:
+  # This cop checks for array literals made up of symbols that are not using the %i() syntax.
+  # This check makes sense only on Ruby 2.0+.
+  # percent: (default) check for array literals made up of symbols that are not using the %i() syntax
+  # brackets: checks for symbol arrays using the %i() syntax on projects which do not want to use that syntax
+  EnforcedStyle: brackets
+  
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
   # from an options hash, so let's not discourage them.
