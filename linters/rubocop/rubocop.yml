@@ -14,6 +14,12 @@ Style/AndOr:
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
+# Don't allow use of numeric predicates, ie zero?, positive?, negative?
+# Sticking with comparison operators is more consistent with other non-zero
+# comparisons
+Style/NumericPredicate:
+  EnforcedStyle: comparison
+
 Style/StringLiterals:
   # Strings which span multiple lines using \ for continuation must
   # use the same type of quotes on each line.
