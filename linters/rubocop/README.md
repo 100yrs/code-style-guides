@@ -1,4 +1,4 @@
-# Common configuration for rubocop in TED projects
+# Common configuration for rubocop in 100yrs projects
 
 ## Goals
 
