@@ -3,7 +3,7 @@ AllCops:
   Exclude:
       - 'tmp/**/*'
       - 'db/migrate/*'
-      - 'db/schema.rb'
+      - 'db/schema*'
       - 'bin/*'
 
 Style/AndOr:
