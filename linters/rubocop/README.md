@@ -10,7 +10,7 @@ in your project's `.rubocop.yml`:
 
 ```yaml
 inherit_from:
-  - https://raw.githubusercontent.com/SesoMedia/code-style-guides/master/linters/rubocop/rubocop.yml
+  - https://raw.githubusercontent.com/100yrs/code-style-guides/master/linters/rubocop/rubocop.yml
   - .rubocop_todo.yml # if you have one
 ```
 
