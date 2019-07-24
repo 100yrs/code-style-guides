@@ -57,6 +57,12 @@ Style/SymbolArray:
   # brackets: checks for symbol arrays using the %i() syntax on projects which do not want to use that syntax
   EnforcedStyle: brackets
   
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+  
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
   # from an options hash, so let's not discourage them.
