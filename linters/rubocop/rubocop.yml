@@ -67,3 +67,6 @@ Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
   # from an options hash, so let's not discourage them.
   CountKeywordArgs: false
+  
+RSpec/NotToNot:
+  Enabled: false
