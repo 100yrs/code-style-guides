@@ -5,6 +5,7 @@ AllCops:
       - 'db/migrate/*'
       - 'db/schema*'
       - 'bin/*'
+  NewCops: enable
 
 Style/AndOr:
   # Only disallow `and` for conditionals
