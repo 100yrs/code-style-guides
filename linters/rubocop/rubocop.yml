@@ -59,7 +59,7 @@ Style/SymbolArray:
   EnforcedStyle: brackets
   
 Metrics/BlockLength:
-  ExcludedMethods: ['describe', 'context']
+  IgnoredMethods: ['describe', 'context']
   Exclude:
     - 'Rakefile'
     - '**/*.rake'
