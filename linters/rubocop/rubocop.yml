@@ -14,6 +14,12 @@ Style/AndOr:
 # Allow braces across multiple lines when used with chained methods
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
+  
+Style/Documentation:
+  Exclude:
+    - 'app/controllers/**/*'
+    - 'lib/component_previews/**/*'
+    - 'spec/**/*'
 
 # Don't allow use of numeric predicates, ie zero?, positive?, negative?
 # Sticking with comparison operators is more consistent with other non-zero
