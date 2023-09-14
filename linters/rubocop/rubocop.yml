@@ -69,6 +69,11 @@ Metrics/BlockLength:
   Exclude:
     - 'Rakefile'
     - '**/*.rake'
+    - 'config/**/*'
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
   
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
@@ -77,6 +82,10 @@ Metrics/ParameterLists:
 
 RSpec/DescribedClass:
   EnforcedStyle: explicit
+
+# Its way to easy to exceed this, leading to lots of senseless warnings.
+RSpec/ExampleLength:
+  Enabled: false
   
 RSpec/NotToNot:
   Enabled: false
