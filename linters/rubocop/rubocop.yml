@@ -71,7 +71,7 @@ Metrics/BlockLength:
   AllowedMethods: ['describe', 'context']
   Exclude:
     - Rakefile
-    - **/*.rake
+    - '**/*.rake'
     - config/**/*
 
 Lint/AmbiguousBlockAssociation:
