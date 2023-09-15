@@ -1,10 +1,10 @@
 AllCops:
   # don't check style on generated files.
   Exclude:
-      - 'tmp/**/*'
-      - 'db/migrate/*'
-      - 'db/schema*'
-      - 'bin/*'
+      - tmp/**/*
+      - db/migrate/*
+      - db/schema*
+      - bin/*
   NewCops: enable
 
 Style/AndOr:
@@ -17,9 +17,12 @@ Style/BlockDelimiters:
   
 Style/Documentation:
   Exclude:
-    - 'app/controllers/**/*'
-    - 'lib/component_previews/**/*'
-    - 'spec/**/*'
+    - app/controllers/**/*
+    - lib/component_previews/**/*
+    - spec/**/*
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: consistent
 
 # Don't allow use of numeric predicates, ie zero?, positive?, negative?
 # Sticking with comparison operators is more consistent with other non-zero
@@ -67,13 +70,13 @@ Style/SymbolArray:
 Metrics/BlockLength:
   AllowedMethods: ['describe', 'context']
   Exclude:
-    - 'Rakefile'
-    - '**/*.rake'
-    - 'config/**/*'
+    - Rakefile
+    - **/*.rake
+    - config/**/*
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - 'spec/**/*'
+    - spec/**/*
   
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
