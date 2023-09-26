@@ -7,6 +7,25 @@ AllCops:
       - bin/*
   NewCops: enable
 
+FactoryBot/AssociationStyle:
+  EnforcedStyle: explicit
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+
+Metrics/BlockLength:
+  AllowedMethods: ['describe', 'context']
+  Exclude:
+    - Rakefile
+    - '**/*.rake'
+    - config/**/*
+
+Metrics/ParameterLists:
+  # Keyword arguments are a great alternative to setting lots of variables
+  # from an options hash, so let's not discourage them.
+  CountKeywordArgs: false
+
 Rails/ActionOrder:
    ExpectedOrder:
      - index
@@ -16,6 +35,19 @@ Rails/ActionOrder:
      - edit
      - update
      - destroy
+
+RSpec/DescribedClass:
+  EnforcedStyle: explicit
+
+# Its way to easy to exceed this, leading to lots of senseless warnings.
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 3
+  
+RSpec/NotToNot:
+  Enabled: false
 
 Style/AndOr:
   # Only disallow `and` for conditionals
@@ -77,32 +109,3 @@ Style/SymbolArray:
   # percent: (default) check for array literals made up of symbols that are not using the %i() syntax
   # brackets: checks for symbol arrays using the %i() syntax on projects which do not want to use that syntax
   EnforcedStyle: brackets
-  
-Metrics/BlockLength:
-  AllowedMethods: ['describe', 'context']
-  Exclude:
-    - Rakefile
-    - '**/*.rake'
-    - config/**/*
-
-Lint/AmbiguousBlockAssociation:
-  Exclude:
-    - spec/**/*
-  
-Metrics/ParameterLists:
-  # Keyword arguments are a great alternative to setting lots of variables
-  # from an options hash, so let's not discourage them.
-  CountKeywordArgs: false
-
-RSpec/DescribedClass:
-  EnforcedStyle: explicit
-
-# Its way to easy to exceed this, leading to lots of senseless warnings.
-RSpec/ExampleLength:
-  Enabled: false
-
-RSpec/MultipleExpectations:
-  Max: 3
-  
-RSpec/NotToNot:
-  Enabled: false
