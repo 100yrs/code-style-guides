@@ -7,6 +7,16 @@ AllCops:
       - bin/*
   NewCops: enable
 
+Rails/ActionOrder:
+   ExpectedOrder:
+     - index
+     - show
+     - new
+     - create
+     - edit
+     - update
+     - destroy
+
 Style/AndOr:
   # Only disallow `and` for conditionals
   EnforcedStyle: conditionals
@@ -18,11 +28,12 @@ Style/BlockDelimiters:
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
+    - app/models/**/*
     - lib/component_previews/**/*
     - spec/**/*
 
 Style/HashSyntax:
-  EnforcedShorthandSyntax: consistent
+  EnforcedShorthandSyntax: never
 
 # Don't allow use of numeric predicates, ie zero?, positive?, negative?
 # Sticking with comparison operators is more consistent with other non-zero
