@@ -10,6 +10,9 @@ AllCops:
 FactoryBot/AssociationStyle:
   EnforcedStyle: explicit
 
+Layout/LineLength:
+  Max: 80
+
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
