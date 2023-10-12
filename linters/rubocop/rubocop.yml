@@ -63,6 +63,8 @@ Style/BlockDelimiters:
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
+    - app/listeners/**/*
+    - app/mailers/**/*
     - app/models/**/*
     - lib/component_previews/**/*
     - spec/**/*
