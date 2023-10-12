@@ -19,10 +19,20 @@ Lint/AmbiguousBlockAssociation:
 
 Metrics/BlockLength:
   AllowedMethods: ['describe', 'context']
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
   Exclude:
     - Rakefile
     - '**/*.rake'
     - config/**/*
+
+Metrics/ClassLength:
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+
+Metrics/MethodLength:
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+
+Metrics/ModuleLength:
+  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
 
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
