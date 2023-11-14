@@ -12,6 +12,7 @@ FactoryBot/AssociationStyle:
 
 Layout/LineLength:
   Max: 80
+  AllowedPatterns: ['^(\s*#)']
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
