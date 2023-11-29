@@ -28,6 +28,8 @@ Metrics/BlockLength:
 
 Metrics/ClassLength:
   CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+  Exclude:
+    - lib/component_previews/**/*
 
 Metrics/MethodLength:
   CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
