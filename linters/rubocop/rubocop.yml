@@ -1,10 +1,10 @@
 AllCops:
   # don't check style on generated files.
   Exclude:
-      - tmp/**/*
-      - db/migrate/*
-      - db/schema*
-      - bin/*
+    - tmp/**/*
+    - db/migrate/*
+    - db/schema*
+    - bin/*
   NewCops: enable
 
 FactoryBot/AssociationStyle:
@@ -13,7 +13,7 @@ FactoryBot/AssociationStyle:
 Layout/LineLength:
   Max: 80
   AllowedPatterns: ['^(\s*#)']
-  Exclude: 
+  Exclude:
     - db/migrate*/**/*
 
 Lint/AmbiguousBlockAssociation:
@@ -21,27 +21,27 @@ Lint/AmbiguousBlockAssociation:
     - spec/**/*
 
 Metrics/BlockLength:
-  AllowedMethods: ['describe', 'context']
-  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+  AllowedMethods: ["describe", "context"]
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
   Exclude:
     - Rakefile
-    - '**/*.rake'
+    - "**/*.rake"
     - config/**/*
 
 Metrics/ClassLength:
-  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
   Exclude:
     - lib/component_previews/**/*
     - doc/lookbook/component_previews/**/*
 
 Metrics/MethodLength:
-  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
   Exclude:
     - lib/component_previews/**/*
     - doc/lookbook/component_previews/**/*
 
 Metrics/ModuleLength:
-  CountAsOne: ['array', 'hash', 'heredoc', 'method_call']
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
 
 Metrics/ParameterLists:
   # Keyword arguments are a great alternative to setting lots of variables
@@ -49,21 +49,21 @@ Metrics/ParameterLists:
   CountKeywordArgs: false
 
 Rails/ActionOrder:
-   ExpectedOrder:
-     - index
-     - show
-     - new
-     - create
-     - edit
-     - update
-     - destroy
+  ExpectedOrder:
+    - index
+    - show
+    - new
+    - create
+    - edit
+    - update
+    - destroy
 
 RSpec/ContextWording:
   Prefixes:
     - when
     - with
     - without
-    - on
+    - "on"
 
 RSpec/DescribedClass:
   EnforcedStyle: explicit
@@ -77,7 +77,7 @@ RSpec/MultipleExpectations:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 8
-  
+
 RSpec/NotToNot:
   Enabled: false
 
@@ -88,7 +88,7 @@ Style/AndOr:
 # Allow braces across multiple lines when used with chained methods
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
-  
+
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
@@ -108,15 +108,15 @@ Style/NumericPredicate:
 # https://github.com/bbatsov/ruby-style-guide#percent-literal-braces
 Style/PercentLiteralDelimiters:
   PreferredDelimiters:
-    '%': '()'
-    '%i': '()'
-    '%q': '()'
-    '%Q': '()'
-    '%r': '{}'
-    '%s': '()'
-    '%w': '()'
-    '%W': '()'
-    '%x': '()'
+    "%": "()"
+    "%i": "()"
+    "%q": "()"
+    "%Q": "()"
+    "%r": "{}"
+    "%s": "()"
+    "%w": "()"
+    "%W": "()"
+    "%x": "()"
 
 # Use / or %r around regular expressions.
 Style/RegexpLiteral:
