@@ -56,6 +56,13 @@ Rails/ActionOrder:
      - update
      - destroy
 
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - on
+
 RSpec/DescribedClass:
   EnforcedStyle: explicit
 
