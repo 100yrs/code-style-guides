@@ -95,6 +95,7 @@ Style/Documentation:
     - app/listeners/**/*
     - app/mailers/**/*
     - app/models/**/*
+    - db/migrate/**/*
     - lib/component_previews/**/*
     - spec/**/*
 
