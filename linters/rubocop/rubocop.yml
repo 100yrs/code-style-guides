@@ -37,8 +37,15 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   CountAsOne: ["array", "hash", "heredoc", "method_call"]
   Exclude:
+    - app/controllers/**/*.rb
     - lib/component_previews/**/*
     - doc/lookbook/component_previews/**/*
+
+Metrics/MethodLength:
+  CountAsOne: ["array", "hash", "heredoc", "method_call"]
+  Max: 16
+  Include:
+    - app/controllers/**/*.rb
 
 Metrics/ModuleLength:
   CountAsOne: ["array", "hash", "heredoc", "method_call"]
@@ -92,18 +99,13 @@ Style/BlockDelimiters:
 Style/Documentation:
   Exclude:
     - app/controllers/**/*
+    - app/helpers/**/*
     - app/listeners/**/*
     - app/mailers/**/*
     - app/models/**/*
     - db/migrate/**/*
     - lib/component_previews/**/*
     - spec/**/*
-
-# Don't allow use of numeric predicates, ie zero?, positive?, negative?
-# Sticking with comparison operators is more consistent with other non-zero
-# comparisons
-Style/NumericPredicate:
-  EnforcedStyle: comparison
 
 # Use `%`-literal delimiters consistently
 # https://github.com/bbatsov/ruby-style-guide#percent-literal-braces
