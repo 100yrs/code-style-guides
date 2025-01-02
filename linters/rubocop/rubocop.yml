@@ -41,12 +41,6 @@ Metrics/MethodLength:
     - lib/component_previews/**/*
     - doc/lookbook/component_previews/**/*
 
-Metrics/MethodLength:
-  CountAsOne: ["array", "hash", "heredoc", "method_call"]
-  Max: 16
-  Include:
-    - app/controllers/**/*.rb
-
 Metrics/ModuleLength:
   CountAsOne: ["array", "hash", "heredoc", "method_call"]
 
