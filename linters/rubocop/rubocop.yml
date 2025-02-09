@@ -38,6 +38,7 @@ Metrics/MethodLength:
   CountAsOne: ["array", "hash", "heredoc", "method_call"]
   Exclude:
     - app/controllers/**/*.rb
+    - db/migrate/**/*.rb
     - lib/component_previews/**/*
     - doc/lookbook/component_previews/**/*
 
