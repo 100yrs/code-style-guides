@@ -60,6 +60,12 @@ Rails/ActionOrder:
     - update
     - destroy
 
+Rails/Output:
+  Exclude:
+    - db/seeds/**/*
+    - db/seeds.rb
+    - lib/tasks/**/*
+    
 RSpec/ContextWording:
   Prefixes:
     - when
