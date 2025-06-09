@@ -60,6 +60,9 @@ Rails/ActionOrder:
     - update
     - destroy
 
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
 Rails/Output:
   Exclude:
     - db/seeds/**/*
@@ -86,6 +89,9 @@ RSpec/MultipleExpectations:
 RSpec/MultipleMemoizedHelpers:
   Max: 8
 
+RSpec/NestedGroups:
+  Max: 4
+
 RSpec/NotToNot:
   Enabled: false
 
@@ -105,6 +111,7 @@ Style/Documentation:
     - app/mailers/**/*
     - app/models/**/*
     - db/migrate/**/*
+    - db/migrate_stats/**/*
     - lib/component_previews/**/*
     - spec/**/*
 
