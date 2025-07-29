@@ -3,7 +3,12 @@ AllCops:
   Exclude:
     - tmp/**/*
     - db/migrate/*
+    - db/migrate_clickhouse/*
+    - db/migrate_stats/*
     - db/schema*
+    - db/clickhouse_schema*
+    - db/structure*
+    - db/clickhouse_structure*
     - bin/*
   NewCops: enable
 
