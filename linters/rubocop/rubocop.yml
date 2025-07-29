@@ -120,6 +120,10 @@ Style/Documentation:
     - lib/component_previews/**/*
     - spec/**/*
 
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
+  EnforcedShorthandSyntax: always
+
 # Use `%`-literal delimiters consistently
 # https://github.com/bbatsov/ruby-style-guide#percent-literal-braces
 Style/PercentLiteralDelimiters:
