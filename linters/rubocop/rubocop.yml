@@ -25,6 +25,10 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - spec/**/*
 
+Lint/MissingSuper:
+  Exclude:
+    - app/components/**/*.rb
+
 Metrics/BlockLength:
   AllowedMethods: ["describe", "context"]
   CountAsOne: ["array", "hash", "heredoc", "method_call"]
