@@ -2,9 +2,9 @@ AllCops:
   # don't check style on generated files.
   Exclude:
     - tmp/**/*
-    - db/migrate/*
+    - db/migrate/**/*
     - db/migrate_clickhouse/*
-    - db/migrate_stats/*
+    - db/migrate_stats/**/*
     - db/schema*
     - db/clickhouse_schema*
     - db/structure*
