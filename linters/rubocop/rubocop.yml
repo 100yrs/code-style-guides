@@ -12,9 +12,6 @@ AllCops:
     - bin/*
   NewCops: enable
 
-FactoryBot/AssociationStyle:
-  EnforcedStyle: explicit
-
 Layout/LineLength:
   Max: 80
   AllowedPatterns: ['^(\s*#)']
